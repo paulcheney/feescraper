@@ -4,7 +4,7 @@ let uri = 'https://beitlehi.org';
 
 
 async function logMovies() {
-  const response = await fetch("https://beitlehi.org");
+  const response = await fetch("https://beitlehi.org"){mode: "no-cors"};
   const movies = await response();
   console.log(movies);
 }
